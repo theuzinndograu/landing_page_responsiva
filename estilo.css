@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr;
+    grid-template-rows: 0.5fr 2fr 1.2fr 0.3fr;
+    grid-template-areas: "nav nav nav nav"
+                         "sidebar conteudo1 main main"
+                         "sidebar conteudo1 main main"
+                         "sidebar conteudo1 footer footer";
+    grid-gap:0.5em;
+    font-size: 16px;
+    font-family: tahoma;
+    font-weight: 800;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(155, 90 , 68, 0.9);
+    grid-area: nav;
+    border-radius: 0.8em;
+}
+.b{
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 50px;
+    margin-right: 25px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    transition: color 0.3s;
+}
+.b:hover{
+    color: rgba(220, 165, 83, 0.9);
+}
+#b{
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 50px;
+    margin-right: 25px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    transition: color 0.3s;
+}
+#b:hover{
+    color: #41ab5d;
+}
+#parnasianismo p{
+    color: white;
+    font-size: 50px;
+    margin-left: 400px;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+#main{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    width: 100%;
+    height: 15%;
+    border-radius: 0.8em;
+}    
+#sidebar{
+    background: rgba(94, 61, 44, 0.9);
+    border-radius: 20px;
+    width: 93%;
+    height: 96.2%;
+    grid-area: sidebar;
+    border-radius: 0.8em;
+    padding: 12px;
+}
+#sidebar a{
+    color: white;
+    font-size: 24px;
+    margin-left: 12px;
+    text-decoration: none;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    transition: color 0.3s;
+}
+#sidebar a:hover{
+    color: rgba(220, 165, 83, 0.9);
+}
+.summary-text{
+    color: white;
+    margin-left: 12px;
+    font-size: 24px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.summary-text:hover{
+    color: rgba(220, 165, 83, 0.9);
+}
+details li{
+    margin: 7px;
+    margin-left: 15px;
+}
+details > summary {
+    list-style: none;
+}
+  details > summary::-webkit-details-marker {
+    display: none;
+}
+li{
+    margin-bottom: 9px;
+}
+#conteudo1{
+    position: relative;
+    background-color: rgba(128, 71, 28, 0.7);;
+    grid-area: conteudo1;
+    border-radius: 0.8em;
+    height: 99%;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(94, 61, 44, 0.9);
+    border-radius: 5px;
+}
+#conteudo1 p{
+    font-size: 23px;
+    color: rgba(211,189,175);
+    text-shadow: 0.1em 0.1em 0.2em black;
+    text-align: justify;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 7px;
+}
+#footer{
+    background-color: rgba(196, 129, 67, 0.7);
+    grid-area: footer;
+    border-radius: 0.8em;
+    height: 89%;
+    margin-right: 7px;
+    overflow-y: scroll;
+}
+#footer p{
+    color: rgba(240, 248, 255, 0.95);
+    font-size: 13px;
+    margin-left: 10px;
+    padding-top: 2px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    text-align: center;
+}
+.background-container{
+    width: 200%;
+    height: 161.5%;
+    background-image: url("21parnas.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.8em;
+}
+.background-container p{
+    font-size: 50px;
+    text-align: center;
+    color: #d3bdaf;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+#main p{
+    position: relative;
+    top: 48%;
+    transform: translateY(-50%); 
+}
